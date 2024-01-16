@@ -1,0 +1,105 @@
+/* ChipInput.css */
+
+.chip-input-container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    border-bottom: 2px solid #e0e7ff;
+  }
+  
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start; /* Align chips to the start (left) */
+  }
+  
+  .chip {
+    background-color: rgba(128, 128, 128, 0.468);
+    padding: 3px 20px 3px 5px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* margin-bottom: 8px; */
+  }
+  
+  .chip span {
+    margin-left: 8px;
+    margin-top: 2px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .item-list::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  .item-list::-webkit-scrollbar-track {
+    background: rgba(128, 128, 128, 0.256);        /* color of the tracking area */
+    
+  }
+  
+  .item-list::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.923);    /* color of the scroll thumb */
+    border-radius: 1cqb;      
+  }
+  
+  .item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: absolute;
+    width: 40%; 
+    max-height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   
+    
+  }
+  
+  .item-list li {
+    padding: 8px;
+    cursor: pointer;
+    color: #000; /* Default text color */
+  }
+  
+  .item-list li span {
+    color: rgba(0, 0, 0, 0.484); /* Change the color of the matched text */
+  }
+  
+  .item-list li:hover {
+    background-color: rgba(128, 128, 128, 0.468);
+  }
+  
+input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin-left: 8px;
+
+}
+
+@media (max-width: 1200px)  {
+    .chip-input-container {
+        width: 90%;
+    }
+
+    .item-list {
+        position: fixed;
+        width: 50%;
+    }
+}
+@media (max-width: 600px)  {
+    .chip-input-container {
+        width: 90%;
+    }
+
+    .item-list {
+        position: fixed;
+        width: 90%;
+    }
+}
+
